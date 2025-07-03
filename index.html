@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciudadanía Digital 5: Terremoto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <h1><span class="book-icon">🧑‍💻</span> <strong>Ciudadanía Digital Misión 5: Terremoto</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">👁️</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Comprender la verificación de contenidos y el pensamiento crítico.</li>
+                                        <li>Distinguir hechos, opiniones, noticias falsas y contenido patrocinado en plataformas infantiles.</li>
+                                        <li>Conocer qué son las fake news y ejemplos reales.</li>
+                                        <li>Diferenciar entre contenido publicitario y engañoso: ¿Quién escribió esto? ¿Dónde lo vi? ¿Está en otro lugar también?</li>
+                                        <li>Aplicar estrategias para identificar fuentes confiables y dudar constructivamente ante contenidos virales o sospechosos.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">Recuerdo Relámpago</strong></li>
+                                        <li><strong class="tactic-highlight">Conexión Ada</strong></li>
+                                        <li><strong class="tactic-highlight">Challenge Express: La Sala de Verificación</strong></li>
+                                        <li><strong class="tactic-highlight">Ticket de Salida/Tweet de Aprendizaje</strong></li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Análisis en equipo de un caso de noticia/post viral (Sala de Verificación).</li>
+                                        <li>Presentación en equipo de un veredicto (confiable/no confiable) con justificación.</li>
+                                        <li>Creación individual de un "Mantra del Verificador" (Tweet de Aprendizaje).</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Chat de "Ada" activo y funcionando.</li>
+                                        <li>Presentación de diapositivas.</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Verificar conexión a internet.</li>
+                                                <li>Asegurar disponibilidad y carga de los dispositivos físicos (ej. tabletas, ordenadores).</li>
+                                                <li>Tener la presentación de diapositivas lista y en orden.</li>
+                                                <li>Probar el chat "Ada" para asegurar su operatividad.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Revisar el flujo de la sesión, los diálogos sugeridos y los tiempos de cada actividad.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Recuerdo Relámpago ⏰ 5 minutos</h2>
+                <p>Activar conocimientos de la Misión 4 (acuerdos de convivencia) a través de la lógica y la reconstrucción de ideas.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Recuerdo Relámpago ⏰ 3 minutos</h3>
+                            <p>Proyecta Diapositiva 2. Recuerdo Relámpago: El Reto del Orden Perdido.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Recibí un mensaje urgente: ¡alguien mezcló las claves para una comunidad digital segura! 🧐 En pantalla verán conceptos de la misión pasada, pero están fuera de orden. En equipo, intenten reconstruir la secuencia lógica que seguimos. <br>(En pantalla se muestran conceptos como: Crear Acuerdos, Prevenir Conflictos, Detectar Señales)”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Recuerdo Relámpago ⏰ 2 minutos</h3>
+                            <p>Realiza una breve reflexión guiada para conectar la confianza en la comunidad con la confianza en la información.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Bien pensado. La secuencia lógica es: primero Detectar Señales, luego Crear Acuerdos para poder Prevenir Conflictos. Ya sabemos cómo construir confianza entre nosotros. Pero, ¿podemos confiar en todo lo que vemos en internet? 🤔 Hoy, la misión cambia. Así como un terremoto sacude el suelo firme, las noticias falsas sacuden nuestra confianza en la verdad. Nos convertiremos en sismólogos de la información. Vamos a aprender a detectar temblores... de noticias falsas.”</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: Conexión Ada ⏰ 20 minutos</h2>
+                <p>Explorar de forma individual los conceptos de fake news, publicidad engañosa y las preguntas clave de la verificación.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Conexión Ada ⏰ 0 minutos</h3>
+                            <p>Proyecta Diapositiva 3. Conexión Ada: Misión Terremoto.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Ahora, conéctense a la plataforma. Ada los enfrentará a información que parece real, pero podría no serlo. Les enseñará a hacer las preguntas correctas. La clave de activación de hoy es: Misión Terremoto 🌋. Escríbanla cuando se las pida.”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Conexión Ada ⏰ 20 minutos</h3>
+                            <p>Proyecta Diapositiva 4. Timer 20 min.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: Challenge Express: La Sala de Verificación ⏰ 10 minutos</h2>
+                <p>Contextualizar la necesidad de verificar la información en un entorno digital realista.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Challenge Express: La Sala de Verificación ⏰ 2 minutos</h3>
+                            <p>Proyecta Diapositiva 5. Challenge Express: La Sala de Verificación.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Atención, equipo. Acaba de ocurrir un ""terremoto informativo"" en internet. Han aparecido tres noticias virales y no sabemos si son reales o falsas. Nuestra clase se convierte hoy en una ‘Sala de Verificación de Hechos’. <br>Este es su reto: Cada equipo recibirá uno de estos tres casos reales que circularon por todo el mundo. Su misión es investigarlo y presentar un veredicto: <br>¿Es CONFIABLE ✅ o NO CONFIABLE ❌?<br>Caso 1: El Remedio Peligroso.<br>Una cadena de WhatsApp asegura que ‘científicos alemanes confirmaron que hacer gárgaras con cloro diluido en agua elimina el virus del COVID-19 antes de que llegue a los pulmones’. El mensaje pide que lo reenvíes a todos tus contactos para ‘salvar vidas’.<br>Caso 2: El Planeta de los Diamantes.<br>Un post viral en redes sociales, con una imagen impresionante de un planeta brillante, afirma que ‘la NASA acaba de descubrir un planeta llamado ‘55 Cancrie’ que está hecho completamente de diamante sólido’.<br>Caso 3: La Foto del Tiburón.<br>Durante un huracán, circula una foto impactante donde se ve a un gran tiburón blanco nadando en una autopista inundada de una ciudad. El texto dice: ‘¡Increíble! Los tiburones están nadando por las calles de Houston tras el huracán’.<br>Elijan un caso en su equipo. ¡La investigación comienza ahora!”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Challenge Express: La Sala de Verificación ⏰ 4 minutos</h3>
+                            <p>Pide a los equipos que analicen su caso asignado usando las 3 preguntas clave (quién, dónde, cómo me hace sentir) y usen buscadores si es necesario.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"“Cada equipo tiene su caso. Su primera tarea es ser detectives. No den nada por sentado. Apliquen las tres preguntas clave que vieron con Ada: <br>1. ¿Quién lo dice? (¿Es un científico real? ¿La NASA? ¿Un medio de noticias?). <br>2. ¿Dónde más aparece? (¿Otros sitios serios lo confirman o lo desmienten?).<br>3. ¿Cómo me hace sentir? (¿Me sorprende mucho? ¿Me da miedo? ¿Me urge a compartirlo?). Usen los buscadores para investigar. Tienen 4 minutos para encontrar sus pistas.”"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Challenge Express: La Sala de Verificación ⏰ 4 minutos</h3>
+                            <p>Pide a los equipos que preparen una breve presentación de su veredicto (confiable/no confiable) y su prueba más fuerte.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"“Ya tienen su análisis. Ahora, preparen su veredicto. No basta con decir ‘es falso’. Necesitan la prueba reina. 👑<br> • Equipo 1 (Cloro): ¿Encontraron algún organismo de salud que lo desmienta?<br>• Equipo 2 (Planeta): ¿La noticia es totalmente falsa o es una exageración de algo real?<br>• Equipo 3 (Tiburón): ¿Pudieron encontrar el origen de esa foto? ¿Es un montaje?<br>Preparen su argumento. En 30 segundos, cada equipo presentará su caso, su veredicto y su prueba más fuerte. 🕵️‍♀️”"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                <h2>⚡ Actividad 4: Ticket de Salida/Tweet de Aprendizaje ⏰ 5 minutos</h2>
+                <p>Sintetizar el aprendizaje en un principio personal de pensamiento crítico.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Ticket de Salida/Tweet de Aprendizaje ⏰ 2 minutos</h3>
+                            <p>Proyecta Diapositiva 8. Tweet de Aprendizaje.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Para cerrar, escriban su propio Mantra del Verificador. Una frase, un tweet, que les sirva como recordatorio antes de creer o compartir algo.<br>Ejemplo del maestro: Mi mantra: Si suena demasiado bueno (o malo) para ser verdad, probablemente no lo sea. Investigo primero. #DudaConstructiva<br>Antes de terminar, quédense con una idea que tenga sentido para ustedes.”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Ticket de Salida/Tweet de Aprendizaje ⏰ 2 minutos</h3>
+                            <p>Pide a los estudiantes que compartan su mantra con un compañero y escuchen su idea.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Compartan su mantra con la persona de al lado. Escuchen su idea. ¿En qué se parecen? ¿Qué pueden aprender de su perspectiva? Verificar la información es una responsabilidad compartida.”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Ticket de Salida/Tweet de Aprendizaje ⏰ 1 minutos</h3>
+                            <p>Proyecta Diapositiva 9. Reflexión final.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Hoy no solo leyeron noticias, las interrogaron. Aprendieron que el pensamiento crítico no es desconfiar de todo, sino saber en qué y en quién confiar. Se convirtieron en sismólogos capaces de distinguir el suelo firme de la información que tiembla. Misión completada.”</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
